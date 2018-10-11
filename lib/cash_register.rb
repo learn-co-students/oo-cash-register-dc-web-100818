@@ -1,4 +1,3 @@
-
 class CashRegister
 
   attr_accessor :discount, :total
@@ -26,7 +25,6 @@ class CashRegister
   def apply_discount
     if @discount != nil
       @total = @total -  @total * @discount.to_i / 100
-      binding.pry
       return "After the discount, the total comes to $#{@total.to_i}."
     else
       "There is no discount to apply."
